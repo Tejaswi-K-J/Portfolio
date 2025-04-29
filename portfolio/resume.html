@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Resume</title>
+    
+    <!-- Embedded CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
+        }
+        .portfolio-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e2125;
+            padding: 10px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-menu li {
+            display: flex;
+            align-items: center;
+        }
+        .nav-menu a {
+            color: #ccc;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav-menu a img {
+            filter: brightness(0) invert(1);
+        }
+        .nav-menu a:hover {
+            color: #00bcd4;
+        }
+
+        /* Resume Section */
+        .resume-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .resume-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #00bcd4;
+        }
+        .resume-image {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 15px rgba(0, 188, 212, 0.3);
+        }
+        .resume-image img {
+            width: 100%;
+            display: block;
+            user-select: none; /* Prevents text/image selection */
+            pointer-events: none; /* Disables right click and drag */
+        }
+
+        /* Footer */
+        footer {
+            background: #1e2125;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;  /* Pushes footer to the bottom */
+            height: 20vh; /* Adjusted footer height to 20% of viewport */
+        }
+
+        footer h2 {
+            margin-bottom: 10px;
+            color: #7941c0;
+            font-size: 24px;
+        }
+
+        footer p, footer h3 {
+            margin: 5px 0;
+            color: white;
+            font-size: 16px;
+        }
+
+        footer .social-links {
+            margin-top: 20px;
+        }
+
+        footer .social-btn {
+            margin: 5px;
+            padding: 10px;
+            background: white;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease, background 0.3s ease;     
+        }
+
+        footer .social-btn:hover {
+            transform: scale(1.2);
+            background: #7941c0;
+        }
+
+        /* Contact Section in Footer */
+        footer #contact {
+            padding: 10px;
+            background: none;
+        }
+
+        footer #contact a {
+            color: #7941c0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer #contact a:hover {
+            color: #b384e7;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="portfolio-header">
+        <h1 class="logo">Portfolio</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html"><img src="home.png" alt="Home" width="20"> Home</a></li>
+                <li><a href="about.html"><img src="about.png" alt="About" width="20"> About</a></li>
+                <li><a href="projects.html"><img src="projects.png" alt="Projects" width="20"> Projects</a></li>
+                <li><a href="resume.html"><img src="resume.png" alt="Resume" width="20"> Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Resume Section -->
+    <section class="resume-section">
+        <div class="resume-image">
+            <img src="My_Resume.jpg" alt="Resume">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <h3>Feel free to connect with ME</h3>
+            <p>Email: <a href="mailto:tejakj1098@gmail.com" style="color: #00bcd4;">tejakj1098@gmail.com</a></p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/tejaswi-k-j" target="_blank" class="social-btn">
+                    <img src="LinkedIn.png" alt="LinkedIn" width="30" height="30">
+                </a>
+                <a href="https://github.com/Tejaswi-K-J" target="_blank" class="social-btn">
+                    <img src="git.png" alt="GitHub" width="30" height="30">
+                </a>
+                <a href="https://instagram.com/tejaswi__shaiva" target="_blank" class="social-btn">
+                    <img src="insta.jpg" alt="Instagram" width="30" height="30">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>

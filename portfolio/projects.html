@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Project Section Styling */
+        .projects-section {
+            padding: 60px 20px;
+            background-color: #121416;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background-color: #1e2125;
+            border: 1px solid #bdbdbd;
+            border-radius: 10px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: #7941c0;
+        }
+
+        .project-card h3 {
+            margin-bottom: 15px;
+            font-size: 22px;
+            color: white;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #cccccc;
+        }
+
+        .view-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0d6efd;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-btn:hover {
+            background-color: #5a1aa3;
+        }
+    </style>
+</head>
+
+<body>
+<header class="portfolio-header">
+    <h1 class="logo">Portfolio</h1>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html"><img src="home.png" alt="Home"> Home</a></li>
+            <li><a href="about.html"><img src="about.png" alt="About"> About</a></li>
+            <li><a href="projects.html"><img src="projects.png" alt="Projects"> Projects</a></li>
+            <li><a href="resume.html"><img src="resume.png" alt="Resume"> Resume</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="projects-section">
+    <h2>My Projects</h2>
+
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>INTERPREP</h3>
+            <p>An interactive platform to help students prepare for interviews with practice questions and tips.</p>
+            <a href="https://github.com/Tejaswi-K-J/INTERPREP" target="_blank" class="view-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>BANGLORE TRAFFIC DATA ANALYSIS</h3>
+            <p>A Machine Learning based clustering algorithm to analyse the banglore traffic data set.</p>
+            <a href="https://github.com/Tejaswi-K-J/Banglore-Traffic-Data-Analysis" target="_blank" class="view-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>PORTFOLIO</h3>
+            <p>Personal portfolio website to showcase my projects, skills, and resume.</p>
+            <a href="https://github.com/yourusername/PORTFOLIO" target="_blank" class="view-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>FARMFAM</h3>
+            <p>A platform to connect local farmers with consumers, featuring product listings and ordering.</p>
+            <a href="https://github.com/yourusername/FARMFAM" target="_blank" class="view-btn">View Project</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <section id="contact">
+        <h2>Contact</h2>
+        <h3>Feel free to connect with ME</h3>
+        <p>Email: <a href="mailto:tejakj1098@gmail.com">tejakj1098@gmail.com</a></p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/tejaswi-k-j" target="_blank" class="social-btn">
+                <img src="LinkedIn.png" alt="LinkedIn" width="30" height="30">
+            </a>
+            <a href="https://github.com/Tejaswi-K-J" target="_blank" class="social-btn">
+                <img src="git.png" alt="GitHub" width="30" height="30">
+            </a>
+            <a href="https://instagram.com/tejaswi__shaiva" target="_blank" class="social-btn">
+                <img src="insta.jpg" alt="Instagram" width="30" height="30">
+            </a>
+        </div>
+    </section>
+</footer>
+</body>
+</html>

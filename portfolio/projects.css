@@ -1,0 +1,118 @@
+/* Header Styling */
+.portfolio-header {
+    display: flex;
+    align-items: center;
+    background-color: #1e2125; /* Same background color as footer */
+    padding: 15px 40px;
+    color: white;
+}
+
+/* Portfolio Title */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    flex: 1;  /* Keeps title on the left */
+}
+
+/* Navigation Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0 auto;  /* Centers the navigation */
+    justify-content: center;
+    flex-grow: 1;  /* Ensures it takes available space */
+}
+
+/* Nav Items */
+.nav-menu li {
+    display: flex;
+    align-items: center;
+}
+
+/* Links Styling */
+.nav-menu li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px; /* Reduced text size */
+    font-weight: bold;
+    gap: 8px;  /* Space between icon and text */
+}
+
+/* Icons */
+.nav-menu li a img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* Changes icon color to white */
+}
+
+/* Ensures proper spacing */
+nav {
+    flex: 2;  /* Allows nav to take central space */
+    display: flex;
+    justify-content: center;  /* Centers the menu */
+}
+/* Footer Styling */
+footer {
+    background: #1e2125;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;  /* Pushes footer to the bottom */
+    height: 20vh; /* Adjusted footer height to 20% of viewport */
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    color: #7941c0;
+    font-size: 24px;
+}
+
+footer p, footer h3 {
+    margin: 5px 0;
+    color: white;
+    font-size: 16px;
+}
+
+footer .social-links {
+    margin-top: 20px;
+}
+
+footer .social-btn {
+    margin: 5px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+footer .social-btn:hover {
+    transform: scale(1.2);
+    background: #7941c0;
+}
+
+/* Contact Section in Footer */
+footer #contact {
+    padding: 10px;
+    background: none;
+}
+
+footer #contact a {
+    color: #7941c0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer #contact a:hover {
+    color: #b384e7;
+}
