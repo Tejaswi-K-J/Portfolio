@@ -70,7 +70,7 @@ function Hero() {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="/RESUME.pdf"
               className="px-8 py-4 rounded-xl border border-white/20 hover:border-purple-500 hover:text-purple-400 transition duration-300"
             >
               Download Resume
